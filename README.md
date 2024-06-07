@@ -5,6 +5,27 @@ This is a demo repo of the VELD design, for the CLSInfra Training School Vienna 
 
 ## how to run
 
+clone this repo, with submodules:
+```
+git clone --recurse-submodules https://github.com/acdh-oeaw/veld_udpipe_demo__ts-vienna_2024.git
+```
+
+change into the folder:
+```
+cd veld_udpipe_demo__ts-vienna_2024
+```
+
+verify that there is content in the submodule `veld_code_15_udpipe`
+```
+ls veld_code_15_udpipe # linux / mac
+dir veld_code_15_udpipe # windows
+```
+It should print contents like this:
+```
+Dockerfile  src  veld_infer.yaml  veld_train.yaml  volumes
+```
+
+
 ### training
 
 Configuration for training is done in [./veld_train.yaml](./veld_train.yaml).
