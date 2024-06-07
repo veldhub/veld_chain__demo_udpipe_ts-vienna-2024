@@ -17,12 +17,12 @@ output model will be saved at [./veld_data_updipe_model/](./veld_data_updipe_mod
 
 clone this repo, with submodules:
 ```
-git clone --recurse-submodules https://github.com/acdh-oeaw/veld_udpipe_demo__ts-vienna-2024.git
+git clone --recurse-submodules https://github.com/acdh-oeaw/veld_chain__demo_udipe__ts-vienna-2024.git
 ```
 
 change into the folder:
 ```
-cd veld_udpipe_demo__ts-vienna-2024
+cd veld_chain__demo_udipe__ts-vienna-2024
 ```
 
 verify that there is content in the submodule's folder `./veld_code_15_udpipe`:
