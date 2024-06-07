@@ -1,0 +1,12 @@
+x-veld:
+  chain:
+    about:
+      description: ""
+      topcis: ""
+
+services:
+  veld_train:
+    extends:
+      file: ./veld_code_15_udpipe/veld_train.yaml
+      service: veld_train
+

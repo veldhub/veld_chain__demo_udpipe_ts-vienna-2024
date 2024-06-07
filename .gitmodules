@@ -1,0 +1,3 @@
+[submodule "veld_code_15_udpipe"]
+	path = veld_code_15_udpipe
+	url = https://github.com/acdh-oeaw/veld_code_15_udpipe.git

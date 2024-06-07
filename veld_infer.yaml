@@ -1,0 +1,12 @@
+x-veld:
+  chain:
+    about:
+      description: ""
+      topcis: ""
+
+services:
+  veld_infer:
+    extends:
+      file: ./veld_code_15_udpipe/veld_infer.yaml
+      service: veld_infer
+
