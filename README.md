@@ -22,7 +22,7 @@ git clone --recurse-submodules https://github.com/acdh-oeaw/veld_udpipe_demo__ts
 
 change into the folder:
 ```
-cd veld_udpipe_demo__ts-vienna_2024
+cd veld_udpipe_demo__ts-vienna-2024
 ```
 
 verify that there is content in the submodule's folder `./veld_code_15_udpipe`:
