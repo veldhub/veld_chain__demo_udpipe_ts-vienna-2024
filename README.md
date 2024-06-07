@@ -25,15 +25,22 @@ change into the folder:
 cd veld_udpipe_demo__ts-vienna_2024
 ```
 
-verify that there is content in the submodule `veld_code_15_udpipe`
+verify that there is content in the submodule's folder `./veld_code_15_udpipe`:
 ```
 ls veld_code_15_udpipe # linux / mac
 dir veld_code_15_udpipe # windows
 ```
+
 It should print contents like this:
 ```
 Dockerfile  src  veld_infer.yaml  veld_train.yaml  volumes
 ```
+
+Should there be no content in that folder, probably the `git clone` wasn't used with `--recurse-submodules`. Pull the submodules manually then with:
+```
+git submodule update --init
+```
+And verify the contents of `veld_code_15_udpipe` as described above.
 
 
 ### training
@@ -48,6 +55,7 @@ docker compose -f veld_train.yaml up
 (or `docker-compose` (with a dash), depending on your install and version)
 
 After training, a model will be persisted in [./veld_data_updipe_model](./veld_data_updipe_model/).
+
 
 ### inference
 
