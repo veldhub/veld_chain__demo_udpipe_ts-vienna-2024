@@ -9,4 +9,13 @@ services:
     extends:
       file: ./veld_code_15_udpipe/veld_train.yaml
       service: veld_train
+    volumes:
+      - ./veld_data_training/:/veld/input/
+      - ./veld_data_updipe_model/:/veld/output/
+    environment:
+      train_data_path: "/veld/input/en_ewt-ud.conllu"
+      model_path: "/veld/output/en_ewt-ud.udpipe"
+      tokenizer_epochs: 2
+      tagger_iterations: 2
+      parser_iterations: 2
 

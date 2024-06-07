@@ -9,4 +9,12 @@ services:
     extends:
       file: ./veld_code_15_udpipe/veld_infer.yaml
       service: veld_infer
+    volumes:
+      - ./veld_data_eval/:/veld/input/1/
+      - ./veld_data_updipe_model/:/veld/input/2/
+      - ./veld_data_inferenced/:/veld/output/
+    environment:
+      in_txt_path: "/veld/input/1/rumpelstiltskin.txt"
+      in_model_path: "/veld/input/2/en_ewt-ud.udpipe"
+      out_conllu_path: "/veld/output/rumpelstiltskin.conllu"
 
