@@ -10,9 +10,9 @@ services:
       file: ./veld_code_15_udpipe/veld_infer.yaml
       service: veld_infer
     volumes:
-      - ./veld_data_eval/:/veld/input/1/
-      - ./veld_data_updipe_model/:/veld/input/2/
-      - ./veld_data_inferenced/:/veld/output/
+      - ./veld_data__demo_eval__ts-vienna-2024/:/veld/input/1/
+      - ./veld_data__demo_models__ts-vienna-2024/:/veld/input/2/
+      - ./veld_data__demo_inferenced__ts-vienna-2024/:/veld/output/
     environment:
       in_txt_path: "/veld/input/1/rumpelstiltskin.txt"
       in_model_path: "/veld/input/2/en_ewt-ud.udpipe"

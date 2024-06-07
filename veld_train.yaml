@@ -10,8 +10,8 @@ services:
       file: ./veld_code_15_udpipe/veld_train.yaml
       service: veld_train
     volumes:
-      - ./veld_data_training/:/veld/input/
-      - ./veld_data_updipe_model/:/veld/output/
+      - ./veld_data__demo_training__ts-vienna-2024/:/veld/input/
+      - ./veld_data__demo_models__ts-vienna-2024/:/veld/output/
     environment:
       train_data_path: "/veld/input/en_ewt-ud.conllu"
       model_path: "/veld/output/en_ewt-ud.udpipe"
