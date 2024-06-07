@@ -49,7 +49,7 @@ docker compose -f veld_train.yaml up
 
 After training, a model will be persisted in [./veld_data_updipe_model](./veld_data_updipe_model/).
 
-### use model for inference
+### inference
 
 Configuration for inference is done in [./veld_infer.yaml](./veld_infer.yaml). All possible
 configurations for this chain can be found at the [originating VELD code repo's infer.yaml](https://github.com/acdh-oeaw/veld_code_15_udpipe/blob/main/veld_infer.yaml).
