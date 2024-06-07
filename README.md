@@ -56,6 +56,8 @@ docker compose -f veld_train.yaml up
 
 After training, a model will be persisted in [./veld_data_updipe_model](./veld_data_updipe_model/).
 
+If you want to improve the training setup, the easiest thing to do is to increase the values of `tokenizer_epochs`, `tagger_iterations`, `parser_iterations` in your `veld_train.yaml`. This makes the training process take more time but delievers better results, generally. Other hyperparameter as described in the [originating veld code repo's train.yaml](https://github.com/acdh-oeaw/veld_code_15_udpipe/blob/main/veld_train.yaml), can be also tweaked but require deeper understanding of the training architecture.
+
 
 ### inference
 
