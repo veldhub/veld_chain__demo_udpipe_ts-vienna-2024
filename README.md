@@ -15,7 +15,7 @@ docker compose -f veld_train.yaml up
 ```
 (or `docker-compose` (with a dash), depending on your install and version)
 
-After training, a model will be persisted in [./veld_data_updipe_model](./veld_data_updipe_model/)
+After training, a model will be persisted in [./veld_data_updipe_model](./veld_data_updipe_model/).
 
 ### use model for inference
 
