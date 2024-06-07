@@ -6,10 +6,12 @@ This is a demo repo of the VELD design, for the CLSInfra Training School Vienna 
 It demonstrates two processing chains: 
 - training a [udpipe model](https://lindat.mff.cuni.cz/services/udpipe/) using a [conllu
   file](./veld_data_training/en_ewt-ud.conllu) as training data provided by
-[universaldependencies](https://github.com/UniversalDependencies/UD_English-EWT/tree/master)
+[universaldependencies](https://github.com/UniversalDependencies/UD_English-EWT/tree/master). The
+output model will be saved at [./veld_data_updipe_model/](./veld_data_updipe_model/).
 - using our self-trained model for inference on evaluation data, a simple [txt file
   "Rumpelstiltkin"](./veld_data_eval/rumpelstiltskin.txt) provided by
-[pitt.edu](https://sites.pitt.edu/~dash/grimm055.html)
+[pitt.edu](https://sites.pitt.edu/~dash/grimm055.html). The output conllu file will be saved at
+[./veld_data_inferenced/](./veld_data_inferenced/).
 
 ## how to run
 
