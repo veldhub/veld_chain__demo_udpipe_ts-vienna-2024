@@ -36,7 +36,7 @@ It should print contents like this:
 Dockerfile  src  veld_infer.yaml  veld_train.yaml  volumes
 ```
 
-Should there be no content in that folder, probably the `git clone` wasn't used with `--recurse-submodules`. Pull the submodules manually then with:
+Should there be no content in that folder, probably `git clone` wasn't used with `--recurse-submodules`. Pull the submodules manually then with:
 ```
 git submodule update --init
 ```
