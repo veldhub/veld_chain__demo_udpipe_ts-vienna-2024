@@ -38,7 +38,9 @@ Dockerfile  src  veld_infer.yaml  veld_train.yaml  volumes
 
 ### training
 
-Configuration for training is done in [./veld_train.yaml](./veld_train.yaml).
+Configuration for training is done in [./veld_train.yaml](./veld_train.yaml). All possible
+configurations for this chain can be found at
+[./veld_code_15_udpipe/veld_train.yaml](./veld_code_15_udpipe/veld_train.yaml).
 
 To run, simply do:
 ```
@@ -50,7 +52,9 @@ After training, a model will be persisted in [./veld_data_updipe_model](./veld_d
 
 ### use model for inference
 
-Configuration for inference is done in [./veld_infer.yaml](./veld_infer.yaml).
+Configuration for inference is done in [./veld_infer.yaml](./veld_infer.yaml). All possible
+configurations for this chain can be found at
+[./veld_code_15_udpipe/veld_infer.yaml](./veld_code_15_udpipe/veld_infer.yaml).
 
 To run, simply do:
 ```
