@@ -4,3 +4,6 @@
 [submodule "data/veld_data__demo_train_data_ts-vienna-2024"]
 	path = data/veld_data__demo_train_data_ts-vienna-2024
 	url = https://github.com/veldhub/veld_data__demo_train_data_ts-vienna-2024.git
+[submodule "data/veld_data__demo_inference_input_ts-vienna-2024"]
+	path = data/veld_data__demo_inference_input_ts-vienna-2024
+	url = https://github.com/veldhub/veld_data__demo_inference_input_ts-vienna-2024.git
