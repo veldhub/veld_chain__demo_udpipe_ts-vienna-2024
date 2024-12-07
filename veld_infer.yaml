@@ -1,20 +1,22 @@
 x-veld:
   chain:
     about:
-      description: ""
-      topcis: ""
+      description: "A demonstration of a VELD chain inferencing on a txt with a self-trained udpipe
+        model"
+      topcis:
+      - NLP
+      - universal dependencies
 
 services:
   veld_infer:
     extends:
-      file: ./veld_code_15_udpipe/veld_infer.yaml
+      file: ./code/veld_code__udpipe/veld_infer.yaml
       service: veld_infer
     volumes:
-      - ./veld_data__demo_eval__ts-vienna-2024/:/veld/input/1/
-      - ./veld_data__demo_models__ts-vienna-2024/:/veld/input/2/
-      - ./veld_data__demo_inferenced__ts-vienna-2024/:/veld/output/
+      - ./data/veld_data__demo_inference_input_ts-vienna-2024/:/veld/input/txt/
+      - ./data/veld_data__demo_updipe_models_ts-vienna-2024/:/veld/input/model/
+      - ./data/veld_data__demo_inference_output_ts-vienna-2024/:/veld/output/
     environment:
-      in_txt_path: "/veld/input/1/rumpelstiltskin.txt"
-      in_model_path: "/veld/input/2/en_ewt-ud.udpipe"
-      out_conllu_path: "/veld/output/rumpelstiltskin.conllu"
+      in_txt_file: "rumpelstiltskin.txt"
+      in_model_file: "en_ewt-ud.udpipe"
 

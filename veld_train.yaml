@@ -1,20 +1,22 @@
 x-veld:
   chain:
     about:
-      description: ""
-      topcis: ""
+      description: "A demonstration of a VELD chain training a udpipe model from scratch"
+      topcis:
+      - NLP
+      - universal dependencies
 
 services:
   veld_train:
     extends:
-      file: ./veld_code_15_udpipe/veld_train.yaml
+      file: ./code/veld_code__udpipe/veld_train.yaml
       service: veld_train
     volumes:
-      - ./veld_data__demo_training__ts-vienna-2024/:/veld/input/
-      - ./veld_data__demo_models__ts-vienna-2024/:/veld/output/
+      - ./data/veld_data__demo_train_data_ts-vienna-2024/:/veld/input/
+      - ./data/veld_data__demo_updipe_models_ts-vienna-2024/:/veld/output/
     environment:
-      train_data_path: "/veld/input/en_ewt-ud.conllu"
-      model_path: "/veld/output/en_ewt-ud.udpipe"
+      train_data_path: "en_ewt-ud.conllu"
+      model_path: "en_ewt-ud.udpipe"
       tokenizer_epochs: 2
       tagger_iterations: 2
       parser_iterations: 2
