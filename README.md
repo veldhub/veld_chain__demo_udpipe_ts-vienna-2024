@@ -68,8 +68,9 @@ tweaked but require deeper understanding of the training architecture.
 
 ### inference
 
-Configuration for inference is done in [./veld_infer.yaml](./veld_infer.yaml). All possible
-configurations for this chain can be found at the [originating VELD code repo's infer.yaml](https://github.com/veldhub/veld_code__udpipe/blob/main/veld_infer.yaml).
+After the training step above, the self-trained udpipe model can be used for inference on unseen data. Such an 
+inference step is defined in [./veld_infer.yaml](./veld_infer.yaml). All possible configurations for this chain 
+can be found at the [originating VELD code repo's infer.yaml](https://github.com/veldhub/veld_code__udpipe/blob/main/veld_infer.yaml).
 
 To run, simply do:
 ```
