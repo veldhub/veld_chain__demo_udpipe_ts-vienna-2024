@@ -47,7 +47,8 @@ And verify the contents of `veld_code__udpipe` as described above.
 ### training
 
 Configuration for training is done in [./veld_train.yaml](./veld_train.yaml). All possible
-configurations for this chain can be found at the [originating veld code repo's train.yaml](https://github.com/acdh-oeaw/veld_code_15_udpipe/blob/main/veld_train.yaml).
+configurations for this chain can be found at the 
+[originating veld code repo's train.yaml](https://github.com/veldhub/veld_code__udpipe/blob/main/veld_train.yaml).
 
 To run, simply do:
 ```
