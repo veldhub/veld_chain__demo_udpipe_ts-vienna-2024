@@ -1,4 +1,3 @@
-
 # VELD udpipe demo TS-Vienna 2024
 
 This is a demo repo of the VELD design, for the CLSInfra Training School Vienna 2024.
@@ -13,6 +12,12 @@ output model will be saved at
   "Rumpelstiltkin"](./data/veld_data__demo_inference_input_ts-vienna-2024/rumpelstiltskin.txt) provided by
 [pitt.edu](https://sites.pitt.edu/~dash/grimm055.html). The output conllu file will be saved at
 [./data/veld_data__demo_inference_output_ts-vienna-2024/](./data/veld_data__demo_inference_output_ts-vienna-2024/).
+
+## requirements
+
+- git
+- docker compose (note: older docker compose versions require running `docker-compose` instead of 
+  `docker compose`)
 
 ## how to run
 
