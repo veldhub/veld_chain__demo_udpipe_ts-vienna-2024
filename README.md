@@ -1,4 +1,4 @@
-# VELD udpipe demo TS-Vienna 2024
+# ![veld chain](https://raw.githubusercontent.com/veldhub/.github/refs/heads/main/images/symbol_V_letter.png) VELD udpipe demo TS-Vienna 2024
 
 This is a demo repo of the VELD design, for the CLSInfra Training School Vienna 2024.
 
